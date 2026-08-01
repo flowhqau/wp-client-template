@@ -1,0 +1,7 @@
+/web/wp/
+/web/app/plugins/
+/vendor/
+/node_modules/
+.env
+.DS_Store
+composer.lock

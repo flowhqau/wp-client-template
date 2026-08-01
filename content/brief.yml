@@ -1,0 +1,25 @@
+# Client site brief — input for AI content generation
+
+site_name: Example Co
+domain: example.com
+tone: professional, approachable
+industry: professional services
+
+sitemap:
+  - slug: home
+    title: Home
+    template: front-page
+  - slug: about
+    title: About Us
+  - slug: services
+    title: Services
+  - slug: contact
+    title: Contact
+
+pages:
+  home:
+    hero_heading: "Welcome to Example Co"
+    hero_subheading: "We help businesses grow with modern digital solutions."
+  about:
+    heading: "About Example Co"
+    body: "Brief placeholder for AI-generated copy."

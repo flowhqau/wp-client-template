@@ -1,0 +1,46 @@
+{
+    "name": "flowhq/wp-client-skeleton",
+    "type": "project",
+    "license": "proprietary",
+    "description": "FlowHQ thin Bedrock client repo for static WordPress sites",
+    "repositories": [
+        { "type": "composer", "url": "https://wpackagist.org" },
+        { "type": "vcs", "url": "https://github.com/flowhqau/wp-platform" },
+        { "type": "vcs", "url": "https://github.com/flowhqau/mb-field-library" },
+        { "type": "vcs", "url": "https://github.com/flowhqau/wp-theme-static-base" }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "composer/installers": "^2.3",
+        "roots/wordpress": "^6.7",
+        "roots/bedrock-autoloader": "^1.0",
+        "roots/wp-config": "^1.0",
+        "vlucas/phpdotenv": "^5.6",
+        "flowhq/wp-platform": "^0.1",
+        "flowhq/mb-field-library": "^0.1",
+        "flowhq/wp-theme-static-base": "^0.1",
+        "wpackagist-plugin/advanced-media-offloader": "^1.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "composer/installers": true,
+            "roots/wordpress-core-installer": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "installer-paths": {
+            "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+            "web/app/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "web/wp"
+    }
+}

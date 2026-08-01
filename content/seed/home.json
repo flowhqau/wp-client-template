@@ -1,0 +1,15 @@
+{
+  "type": "page",
+  "post_type": "page",
+  "title": "Home",
+  "slug": "home",
+  "status": "publish",
+  "is_front_page": true,
+  "content": "",
+  "meta": {
+    "hero_heading": "Welcome to Example Co",
+    "hero_subheading": "We help businesses grow with modern digital solutions.",
+    "seo_meta_title": "Example Co | Professional Services",
+    "seo_meta_description": "Example Co delivers modern digital solutions for growing businesses."
+  }
+}

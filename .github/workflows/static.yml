@@ -1,0 +1,15 @@
+name: Deploy Static Site
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Forge deploy
+        env:
+          FORGE_DEPLOY_URL: ${{ secrets.FORGE_DEPLOY_URL }}
+        run: |
+          curl -s -o /dev/null -w "%{http_code}" -X POST "$FORGE_DEPLOY_URL"
